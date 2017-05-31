@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/accent"
+    android:background="@android:color/background_light"
     android:fitsSystemWindows="true"
-    tools:context="com.fanhl.ppt.ui.game.GameActivity"
-    tools:showIn="@layout/activity_game">
+    tools:context="com.fanhl.ppt.ui.game.GameActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dice_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/boundary"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/chat_fab"
+        app:layout_anchorGravity="top"
+        app:srcCompat="@drawable/ic_casino_white_24dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/chat_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/boundary"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_chat_bubble_white_24dp"/>
+</android.support.design.widget.CoordinatorLayout>
