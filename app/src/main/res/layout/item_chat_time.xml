@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/boundary"
+        android:layout_weight="1"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_small"
+        tools:text="2017年12月23日 12:34:56"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/boundary"
+        android:layout_weight="1"
+        android:background="@color/divider"/>
+</LinearLayout>

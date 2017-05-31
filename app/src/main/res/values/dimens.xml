@@ -5,5 +5,6 @@
     <dimen name="avatar_size_with_margin">48dp</dimen>
     <dimen name="fab_mini_size">40dp</dimen>
     <dimen name="fab_mini_size_half">20dp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
 
 </resources>
