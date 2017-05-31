@@ -13,7 +13,9 @@ class SplashActivity : BaseActivity() {
         setContentView(R.layout.activity_splash)
 
 //        Handler().post { MainActivity.launch(this@SplashActivity) }
-        Handler().post { GameActivity.launch(this@SplashActivity) }
+        Handler().postDelayed({
+            GameActivity.launch(this@SplashActivity)
+        }, 1000)
     }
 }
 
