@@ -1,5 +1,7 @@
 package com.fanhl.ppt.ui.main
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -39,5 +41,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+    companion object {
+        fun launch(context: Context) = context.startActivity(Intent(context, MainActivity::class.java))
     }
 }
