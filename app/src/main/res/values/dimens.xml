@@ -2,5 +2,8 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="boundary">8dp</dimen>
     <dimen name="boundary_half">4dp</dimen>
+    <dimen name="avatar_size_with_margin">48dp</dimen>
+    <dimen name="fab_mini_size">40dp</dimen>
+    <dimen name="fab_mini_size_half">20dp</dimen>
 
 </resources>
