@@ -28,7 +28,7 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ui.game.GameActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.Fullscreen"/>
     </application>
 
 </manifest>
