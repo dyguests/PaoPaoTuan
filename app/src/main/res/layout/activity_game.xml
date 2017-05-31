@@ -9,7 +9,9 @@
     android:fitsSystemWindows="true"
     tools:context="com.fanhl.ppt.ui.game.GameActivity">
 
-    <include layout="@layout/particle_chatroom"/>
+    <include layout="@layout/particle_chat_view"/>
+
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/chat_fab"
