@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.fanhl.ppt.R
 import com.fanhl.ppt.ui.common.BaseActivity
-import com.fanhl.ppt.ui.main.MainActivity
+import com.fanhl.ppt.ui.game.GameActivity
 
 class SplashActivity : BaseActivity() {
 
@@ -12,7 +12,8 @@ class SplashActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        Handler().post { MainActivity.launch(this@SplashActivity) }
+//        Handler().post { MainActivity.launch(this@SplashActivity) }
+        Handler().post { GameActivity.launch(this@SplashActivity) }
     }
 }
 
