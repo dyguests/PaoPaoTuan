@@ -5,14 +5,7 @@
               android:layout_height="wrap_content"
               android:layout_marginEnd="@dimen/avatar_size_with_margin">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/chat_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_margin="@dimen/boundary_half"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/ic_chat_bubble_white_24dp"/>
+    <include layout="@layout/particle_chat_avatar"/>
 
     <include layout="@layout/particle_chat_text"/>
 </LinearLayout>
