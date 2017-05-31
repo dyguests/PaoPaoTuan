@@ -10,17 +10,6 @@
     tools:context="com.fanhl.ppt.ui.game.GameActivity">
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/dice_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|end"
-        android:layout_margin="@dimen/boundary"
-        app:fabSize="mini"
-        app:layout_anchor="@+id/chat_fab"
-        app:layout_anchorGravity="top"
-        app:srcCompat="@drawable/ic_casino_white_24dp"/>
-
-    <android.support.design.widget.FloatingActionButton
         android:id="@+id/chat_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,4 +17,22 @@
         android:layout_margin="@dimen/boundary"
         app:fabSize="mini"
         app:srcCompat="@drawable/ic_chat_bubble_white_24dp"/>
+
+    <View
+        android:id="@+id/anchor_1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/boundary"
+        app:layout_anchor="@id/chat_fab"
+        app:layout_anchorGravity="top|end"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dice_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/boundary"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/anchor_1"
+        app:layout_anchorGravity="top"
+        app:srcCompat="@drawable/ic_casino_white_24dp"/>
 </android.support.design.widget.CoordinatorLayout>
