@@ -15,6 +15,7 @@ class SplashActivity : BaseActivity() {
 //        Handler().post { MainActivity.launch(this@SplashActivity) }
         Handler().postDelayed({
             GameActivity.launch(this@SplashActivity)
+            finish()
         }, 1000)
     }
 }
