@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     tools:context="com.fanhl.ppt.ui.game.GameActivity">
 
-    <include layout="@layout/particle_chat_view"/>
+    <include layout="@layout/particle_swipe_recycler"/>
 
 
     <android.support.design.widget.FloatingActionButton

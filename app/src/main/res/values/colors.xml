@@ -12,4 +12,35 @@
     <color name="divider">#BDBDBD</color>
 
     <color name="transparent_white_20">#33ffffff</color>
+
+    <!--https://www.materialpalette.com/colors-->
+    <color name="blue_50">#e3f2fd</color>
+    <color name="blue_100">#bbdefb</color>
+    <color name="blue_200">#90caf9</color>
+    <color name="blue_300">#64b5f6</color>
+    <color name="blue_400">#42a5f5</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="blue_600">#1e88e5</color>
+    <color name="blue_700">#1976d2</color>
+    <color name="blue_800">#1565c0</color>
+    <color name="blue_900">#0d47a1</color>
+    <color name="blue_A100">#82b1ff</color>
+    <color name="blue_A200">#448aff</color>
+    <color name="blue_A400">#2979ff</color>
+    <color name="blue_A700">#2962ff</color>
+
+    <color name="deep_orange_50"> #fbe9e7</color>
+    <color name="deep_orange_100"> #ffccbc</color>
+    <color name="deep_orange_200"> #ffab91</color>
+    <color name="deep_orange_300"> #ff8a65</color>
+    <color name="deep_orange_400"> #ff7043</color>
+    <color name="deep_orange_500"> #ff5722</color>
+    <color name="deep_orange_600"> #f4511e</color>
+    <color name="deep_orange_700"> #e64a19</color>
+    <color name="deep_orange_800"> #d84315</color>
+    <color name="deep_orange_900"> #bf360c</color>
+    <color name="deep_orange_A100"> #ff9e80</color>
+    <color name="deep_orange_A200"> #ff6e40</color>
+    <color name="deep_orange_A400"> #ff3d00</color>
+    <color name="deep_orange_A700"> #dd2c00</color>
 </resources>

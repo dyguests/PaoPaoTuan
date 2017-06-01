@@ -12,9 +12,9 @@ import com.fanhl.ppt.dummy.ChatDummy
 import com.fanhl.ppt.model.Chat
 import com.fanhl.ppt.ui.common.FullscreenActivity
 import com.fanhl.ppt.ui.common.ListAdapter
-import com.fanhl.ppt.util.ToastUtils
+import com.fanhl.ppt.util.ToastUtil
 import kotlinx.android.synthetic.main.activity_game.*
-import kotlinx.android.synthetic.main.particle_chat_view.*
+import kotlinx.android.synthetic.main.particle_swipe_recycler.*
 
 class GameActivity : FullscreenActivity() {
     val chatViewHolder by lazy { ChatViewHolder() }
@@ -29,14 +29,14 @@ class GameActivity : FullscreenActivity() {
 
     private fun assignViews() {
         chat_fab.setOnClickListener { callChatBox() }
-        dice_fab.setOnClickListener { ToastUtils.showShortToast(this@GameActivity, "dice") }
+        dice_fab.setOnClickListener { ToastUtil.showShortToast(this@GameActivity, "dice") }
     }
 
     /**
      * 打开输入框
      */
     private fun callChatBox() {
-        ToastUtils.showShortToast(this@GameActivity, "chat")
+        ToastUtil.showShortToast(this@GameActivity, "chat")
     }
 
     inner class ChatViewHolder {

@@ -6,7 +6,7 @@ import android.widget.Toast
 /**
  * Created by zmy on 2015/7/13.
  */
-object ToastUtils {
+object ToastUtil {
     fun showToast(context: Context?, msg: String, duration: Int) {
         var msg = msg
         if (context != null) {
