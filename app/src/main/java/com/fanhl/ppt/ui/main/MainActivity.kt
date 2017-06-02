@@ -9,9 +9,10 @@ import android.util.Log
 import android.view.*
 import com.fanhl.ppt.Constant.PAGE_SIZE_DEFAULT
 import com.fanhl.ppt.R
-import com.fanhl.ppt.model.Game
+import com.fanhl.ppt.model.Room
 import com.fanhl.ppt.ui.common.BaseActivity
 import com.fanhl.ppt.ui.common.ListAdapter
+import com.fanhl.ppt.ui.square.RoomActivity
 import com.fanhl.ppt.util.ToastUtil
 import com.fanhl.ppt.util.extensions.addOnScrollBottomListener
 import com.fanhl.ppt.util.extensions.postRefreshing
@@ -22,7 +23,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.particle_swipe_recycler.*
 
 class MainActivity : BaseActivity() {
-    private val adapter by lazy { GameAdapter() }
+    private val adapter by lazy { RoomAdapter() }
 
     /**
      * 要加载数据时的页码
@@ -65,6 +66,8 @@ class MainActivity : BaseActivity() {
 
     private fun initData() {
         recycler_view.adapter = adapter
+
+        adapter.setOnItemClickListener { position, holder -> RoomActivity.launch(this@MainActivity, holder.data.id) }
     }
 
     private fun refreshData() {
@@ -79,7 +82,7 @@ class MainActivity : BaseActivity() {
         if (!isLoadMoreable) return
         isLoadMoreable = false
 
-        app.client.mainService
+        app.client.squareService
                 .getGameList(
                         page = page,
                         page_size = PAGE_SIZE_DEFAULT
@@ -122,8 +125,8 @@ class MainActivity : BaseActivity() {
     }
 }
 
-class GameAdapter : ListAdapter<GameAdapter.ViewHolder, Game>() {
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int) = ViewHolder(LayoutInflater.from(parent?.context).inflate(R.layout.item_game, parent, false))
+class RoomAdapter : ListAdapter<RoomAdapter.ViewHolder, Room>() {
+    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int) = ViewHolder(LayoutInflater.from(parent?.context).inflate(R.layout.item_room, parent, false))
 
-    inner class ViewHolder(view: View) : ListAdapter.ViewHolder<Game>(view)
+    inner class ViewHolder(view: View) : ListAdapter.ViewHolder<Room>(view)
 }

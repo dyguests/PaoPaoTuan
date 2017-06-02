@@ -1,7 +1,7 @@
 package com.fanhl.ppt.dummy.io.rest
 
-import com.fanhl.ppt.dummy.io.rest.service.MainService
+import com.fanhl.ppt.dummy.io.rest.service.SquareService
 
 class DummyClient {
-    val mainService by lazy { MainService() }
+    val squareService by lazy { SquareService() }
 }

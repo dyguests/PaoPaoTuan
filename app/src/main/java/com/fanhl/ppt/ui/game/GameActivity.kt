@@ -10,6 +10,7 @@ import com.fanhl.ppt.App
 import com.fanhl.ppt.R
 import com.fanhl.ppt.dummy.ChatDummy
 import com.fanhl.ppt.model.Chat
+import com.fanhl.ppt.model.Game
 import com.fanhl.ppt.ui.common.FullscreenActivity
 import com.fanhl.ppt.ui.common.ListAdapter
 import com.fanhl.ppt.util.ToastUtil
@@ -18,6 +19,8 @@ import kotlinx.android.synthetic.main.particle_swipe_recycler.*
 
 class GameActivity : FullscreenActivity() {
     val chatViewHolder by lazy { ChatViewHolder() }
+
+    val game by lazy { Game(intent.getLongExtra(EXTRA_ID, 0)) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +52,11 @@ class GameActivity : FullscreenActivity() {
     }
 
     companion object {
-        fun launch(context: Context) = context.startActivity(Intent(context, GameActivity::class.java))
+        fun launch(context: Context, gameId: Long) {
+            val intent = Intent(context, GameActivity::class.java)
+            intent.putExtra(EXTRA_ID, gameId)
+            context.startActivity(intent)
+        }
     }
 }
 
